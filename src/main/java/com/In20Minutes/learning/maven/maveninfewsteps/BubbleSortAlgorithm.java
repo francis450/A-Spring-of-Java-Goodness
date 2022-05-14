@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Primary // Incase there are a number of Sort algorithms, the BubbleSortAlgorithm will be utilized first
 public class BubbleSortAlgorithm implements SortingAlgorithm {
     public int[] sort(int [] numbers){
-        //logic for BUbbleSortAlgorithm
+        //logic for BUbbleSortAlgorithm goes here
         return numbers;
     }
 }
