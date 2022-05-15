@@ -4,12 +4,14 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
+		<!-- ArtifactId - This is the name of this specific project-->
+		<artifactId>spring-boot-starter-parent</artifactId>t
 		<version>2.7.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.In20Minutes.learning.maven</groupId>
 	<artifactId>maven-in-few-steps</artifactId>
+	<!--0.0.1 - It means that this project is still under development-->
 	<version>0.0.1-SNAPSHOT</version>
 	<name>maven-in-few-steps</name>
 	<description>Demo project for Spring Boot</description>
