@@ -20,6 +20,9 @@ public class BinarySearchImpl {
         this.sortingAlgorithm = sortingAlgorithm;
     }*/
 
+    //We have no need to use a constructor injection because its hectic to maintain
+    //Setter injection is reliable in that we dont need to define them manually
+
     public int binarySearch(int [] numbers, int numberToSearchFor){
 
         int [] sortedNumbers = sortingAlgorithm.sort(numbers);
