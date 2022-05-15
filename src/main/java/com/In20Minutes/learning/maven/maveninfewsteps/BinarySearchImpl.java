@@ -15,6 +15,11 @@ public class BinarySearchImpl {
         this.sortingAlgorithm = sortingAlgorithm;
     }
 
+    //Setter injection
+    /*public void setSortingAlgorithm(SortingAlgorithm sortingAlgorithm) {
+        this.sortingAlgorithm = sortingAlgorithm;
+    }*/
+
     public int binarySearch(int [] numbers, int numberToSearchFor){
 
         int [] sortedNumbers = sortingAlgorithm.sort(numbers);
