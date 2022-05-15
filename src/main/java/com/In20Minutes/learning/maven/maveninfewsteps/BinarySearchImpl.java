@@ -1,9 +1,11 @@
 package com.In20Minutes.learning.maven.maveninfewsteps;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("prototype")//It means that with this component, Spring will create a new Bean whenever its requested
 public class BinarySearchImpl {
     @Autowired
     private SortingAlgorithm bubbleSortAlgorithm;//Dependecy injection by name(Name of the imlementation of the interface)
@@ -26,7 +28,7 @@ public class BinarySearchImpl {
     public int binarySearch(int [] numbers, int numberToSearchFor){
 
         int [] sortedNumbers = bubbleSortAlgorithm.sort(numbers);
-        System.out.println(bubbleSortAlgorithm);
+        System.out.println(sortedNumbers);
         //Sorting an array
         //Search the Array
         //Return the result
