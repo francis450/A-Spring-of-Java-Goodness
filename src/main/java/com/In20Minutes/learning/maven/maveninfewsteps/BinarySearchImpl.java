@@ -6,18 +6,18 @@ import org.springframework.stereotype.Component;
 @Component
 public class BinarySearchImpl {
     @Autowired
-    private SortingAlgorithm sortingAlgorithm;
+    private SortingAlgorithm bubbleSortAlgorithm;//Dependecy injection by name(Name of the imlementation of the interface)
 
 
     //This is called constructor injection - Injection of dependencies using the constructor
-    public BinarySearchImpl(SortingAlgorithm sortingAlgorithm){
+    /*public BinarySearchImpl(SortingAlgorithm bubbleSortAlgorithm){
         super();
-        this.sortingAlgorithm = sortingAlgorithm;
-    }
+        this.bubbleSortAlgorithm = bubbleSortAlgorithm;
+    }*/
 
     //Setter injection
-    /*public void setSortingAlgorithm(SortingAlgorithm sortingAlgorithm) {
-        this.sortingAlgorithm = sortingAlgorithm;
+    /*public void setSortingAlgorithm(SortingAlgorithm bubbleSortAlgorithm) {
+        this.bubbleSortAlgorithm = bubbleSortAlgorithm;
     }*/
 
     //We have no need to use a constructor injection because its hectic to maintain
@@ -25,8 +25,8 @@ public class BinarySearchImpl {
 
     public int binarySearch(int [] numbers, int numberToSearchFor){
 
-        int [] sortedNumbers = sortingAlgorithm.sort(numbers);
-        System.out.println(sortingAlgorithm);
+        int [] sortedNumbers = bubbleSortAlgorithm.sort(numbers);
+        System.out.println(bubbleSortAlgorithm);
         //Sorting an array
         //Search the Array
         //Return the result
