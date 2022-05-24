@@ -10,7 +10,9 @@ import org.springframework.stereotype.Component;
 @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)//A better way for saying prototype Scope
 public class BinarySearchImpl {
     @Autowired
-    private SortingAlgorithm bubbleSortAlgorithm;//Dependecy injection by name(Name of the imlementation of the interface)
+    //@Qualifier()
+    private SortingAlgorithm bubbleSortAlgorithm;
+    //private SortingAlgorithm bubbleSortAlgorithm;//Dependecy injection by name(Name of the imlementation of the interface)
 
 
     //This is called constructor injection - Injection of dependencies using the constructor
