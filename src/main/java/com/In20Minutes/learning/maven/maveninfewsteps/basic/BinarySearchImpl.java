@@ -6,6 +6,8 @@ import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import java.util.Arrays;
+
 @Component
 //@Scope("prototype")//It means that with this component, Spring will create a new Bean whenever its requested
 @Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)//A better way for saying prototype Scope
@@ -33,10 +35,10 @@ public class BinarySearchImpl {
     public int binarySearch(int [] numbers, int numberToSearchFor){
 
         int [] sortedNumbers = sortingAlgorithm.sort(numbers);
-        System.out.println(sortedNumbers);
+        System.out.println(Arrays.toString(sortedNumbers));
         //Sorting an array
         //Search the Array
-        //Return the result
+        //Return the result.,
 
         return 20;
     }
