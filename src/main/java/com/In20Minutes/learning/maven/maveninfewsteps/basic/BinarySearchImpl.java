@@ -11,8 +11,8 @@ import org.springframework.stereotype.Component;
 @Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)//A better way for saying prototype Scope
 public class BinarySearchImpl {
     @Autowired
-    //@Qualifier()
-    private SortingAlgorithm bubbleSortAlgorithm;
+    @Qualifier("quick")
+    private SortingAlgorithm sortingAlgorithm;
     //private SortingAlgorithm bubbleSortAlgorithm;//Dependecy injection by name(Name of the imlementation of the interface)
 
 
