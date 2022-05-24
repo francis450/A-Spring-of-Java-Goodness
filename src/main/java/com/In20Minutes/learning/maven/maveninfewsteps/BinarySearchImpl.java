@@ -6,7 +6,8 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope("prototype")//It means that with this component, Spring will create a new Bean whenever its requested
+//@Scope("prototype")//It means that with this component, Spring will create a new Bean whenever its requested
+@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)//A better way for saying prototype Scope
 public class BinarySearchImpl {
     @Autowired
     private SortingAlgorithm bubbleSortAlgorithm;//Dependecy injection by name(Name of the imlementation of the interface)
