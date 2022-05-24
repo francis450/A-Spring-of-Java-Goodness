@@ -32,7 +32,7 @@ public class BinarySearchImpl {
 
     public int binarySearch(int [] numbers, int numberToSearchFor){
 
-        int [] sortedNumbers = bubbleSortAlgorithm.sort(numbers);
+        int [] sortedNumbers = sortingAlgorithm.sort(numbers);
         System.out.println(sortedNumbers);
         //Sorting an array
         //Search the Array
