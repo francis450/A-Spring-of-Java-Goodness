@@ -1,13 +1,14 @@
 package com.In20Minutes.learning.maven.maveninfewsteps;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
 //@Scope("prototype")//It means that with this component, Spring will create a new Bean whenever its requested
-@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)//A better way for saying prototype Scope
+@Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)//A better way for saying prototype Scope
 public class BinarySearchImpl {
     @Autowired
     //@Qualifier()
