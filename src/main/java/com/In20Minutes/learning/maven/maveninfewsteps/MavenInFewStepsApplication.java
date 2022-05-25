@@ -31,6 +31,13 @@ public class MavenInFewStepsApplication {
 
 		PersonDAO personDAO1 = applicationContext.getBean(PersonDAO.class);
 
+		LOGGER.info("{}",personDAO);
+		LOGGER.info("{}",personDAO.getJdbcConnection());
+		//This will create return a new JdbcConnection Bean despite using the same instance
+		LOGGER.info("{}",personDAO.getJdbcConnection());
+
+		LOGGER.info("{}",personDAO1);
+		LOGGER.info("{}",personDAO.getJdbcConnection());
 	}
 
 }
