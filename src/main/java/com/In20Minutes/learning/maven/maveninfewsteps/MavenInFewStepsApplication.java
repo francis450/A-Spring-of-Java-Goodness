@@ -27,12 +27,9 @@ public class MavenInFewStepsApplication {
 		BinarySearchImpl binarySearch = applicationContext.getBean(BinarySearchImpl.class);
 		//Use the bean to call the binarySearch methods
 
-		BinarySearchImpl binarySearch1 = applicationContext.getBean(BinarySearchImpl.class);
+		PersonDAO personDAO = applicationContext.getBean(PersonDAO.class);
 
-		System.out.println("First Bean: "+binarySearch);
-		System.out.println("Second Bean: "+binarySearch1);
-		int result = binarySearch.binarySearch(new int[] {12,4,6},3);
-		System.out.println(result);
+		PersonDAO personDAO1 = applicationContext.getBean(PersonDAO.class);
 
 	}
 
