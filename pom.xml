@@ -16,6 +16,7 @@
 	<name>maven-in-few-steps</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
+		<!--java version in use -->
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
