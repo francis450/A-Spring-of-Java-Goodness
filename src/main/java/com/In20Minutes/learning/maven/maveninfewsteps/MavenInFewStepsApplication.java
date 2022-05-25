@@ -4,8 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
+import java.util.logging.Logger;
+
 @SpringBootApplication
 public class MavenInFewStepsApplication {
+
+		private static Logger LOGGER = LoggerFactory.getLogger(MavenInFewStepsApplication.class);
 
 	public static void main(String[] args) {
 		//This is the traditional way of object declaration
